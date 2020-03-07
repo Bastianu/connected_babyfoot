@@ -10,6 +10,11 @@ import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
+/* 
+***classe incomplète*** nécessaire à la connexion au serveur pour 
+l'appel des API
+*/
+
 public class CallAPI extends AsyncTask<String, String, String> {
 
     public CallAPI(){

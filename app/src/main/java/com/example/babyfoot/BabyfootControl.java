@@ -80,7 +80,7 @@ public class BabyfootControl extends Activity {
         Start.setVisibility(View.GONE);
         Reset.setVisibility(View.GONE);
 
-        //new ConnectBT().execute();
+        new ConnectBT().execute();
 
         Start.setOnClickListener(new View.OnClickListener()
         {
@@ -179,7 +179,7 @@ public class BabyfootControl extends Activity {
             {
                 msg("Error");
             }
-            //startBTreception();
+            startBTreception();
 
         }
 
@@ -229,7 +229,7 @@ public class BabyfootControl extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
-/*
+
     private class ConnectBT extends AsyncTask<Void, Void, Void>  // UI thread
     {
         private boolean ConnectSuccess = true;
@@ -278,7 +278,7 @@ public class BabyfootControl extends Activity {
             progress.dismiss();
         }
     }
-*/
+
     private void setText(final TextView text,final String value){
         runOnUiThread(new Runnable() {
             @Override
